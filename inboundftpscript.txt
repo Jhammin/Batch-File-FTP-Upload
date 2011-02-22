@@ -1,0 +1,8 @@
+open [server]
+[username]
+[password]
+cd [folder]
+prompt
+mget *.dat
+mdelete *.dat
+bye

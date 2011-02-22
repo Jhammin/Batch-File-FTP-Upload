@@ -1,0 +1,7 @@
+open [server]
+[username]
+[password]
+cd outbound
+prompt
+mput *.dat
+bye

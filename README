@@ -1,0 +1,15 @@
+set FileName=filename%date:~-4,4%%date:~-7,2%%date:~0,2%-%time:~0,2%-%time:~3,2%-%time:~6,2%
+	:: Sets the FileName varible as original filename[date][time]
+ren filename.dat %FileName%.dat
+	:: Renames the file to the correct unique name
+c:\windows\system32\ftp.exe -s:outboundftpscript.txt
+	:: open ftp and make the connection and do whats in the text file. Edit the outboundftpscript.txt along with this
+xcopy *.dat sent\*.dat
+	:: xcopy C:\FTP\*.dat C:\FTP\sent\*.dat
+del *.dat
+	:: del C:\FTP\*.dat
+	
+	
+c:\windows\system32\ftp.exe -s:inboundftpscript.txt
+	:: This program will connect to the FTP server on the server look for .dat
+	:: files as defined in the inboundftpscript.txt file and pull them over.

@@ -1,0 +1,1 @@
+c:\windows\system32\ftp.exe -s:inboundftpscript.txt
