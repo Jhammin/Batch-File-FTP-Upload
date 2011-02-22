@@ -1,7 +1,7 @@
 open [server]
 [username]
 [password]
-cd outbound
+cd [folder]
 prompt
 mput *.dat
 bye

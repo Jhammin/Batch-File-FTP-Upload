@@ -13,3 +13,22 @@ del *.dat
 c:\windows\system32\ftp.exe -s:inboundftpscript.txt
 	:: This program will connect to the FTP server on the server look for .dat
 	:: files as defined in the inboundftpscript.txt file and pull them over.
+	
+Replace the [ ] with the following information:
+
+[server] = FTP server IP or host name
+[username] = FTP username to login to
+[password] = FTP password for the user above
+[folder] = folder to change to, ex: cd outbound or cd /inbound/ftp
+
+prompts - ignore prompts
+mput *.dat - put any files named *.dat
+bye - quit ftp
+
+open [server]
+[username]
+[password]
+cd [folder]
+prompt
+mput *.dat
+bye
