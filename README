@@ -1,3 +1,6 @@
+Ahahahahah I'm editing this! 
+
+
 set FileName=filename%date:~-4,4%%date:~-7,2%%date:~0,2%-%time:~0,2%-%time:~3,2%-%time:~6,2%
 	:: Sets the FileName varible as original filename[date][time]
 ren filename.dat %FileName%.dat
